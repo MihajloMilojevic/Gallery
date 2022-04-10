@@ -1,0 +1,30 @@
+.post {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.image {
+	width: 100%;
+}
+.gallery {
+	--num-of-columns: 4;
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(var(--num-of-columns), 1fr);
+	grid-gap: 15px;
+}
+@media screen and (max-width: 1024px) {
+	.gallery {
+		--num-of-columns: 3;
+	}
+}
+@media screen and (max-width: 768px) {
+	.gallery {
+		--num-of-columns: 2;
+	}
+}
+@media screen and (max-width: 480px) {
+	.gallery {
+		--num-of-columns: 1;
+	}
+}
