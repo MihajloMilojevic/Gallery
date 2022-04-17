@@ -1,4 +1,4 @@
-import {useState} from "react";
+import React, {useState} from "react";
 
 import Modal from "react-modal";
 import ModalContent from "../components/modalContent";
@@ -40,16 +40,16 @@ export default function Home() {
 		<>
 			<div className="gallery">
 			{
-				posts.data.posts.map(post => (
+				{/* posts.data.posts.map(post => (
 					<div className="post" key={post._id}>
 						<img 
 							src={`${SERVER}/uploads/${post.image}`} 
 							className="image" 
-							alt={post?.title || ""} 
+							alt={"d"} 
 							onClick={() => setSelectedPost(post)}
 						/>
 					</div>
-				))
+				)) */}
 			}
 			</div>
 			{<Modal

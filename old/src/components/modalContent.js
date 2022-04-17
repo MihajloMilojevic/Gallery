@@ -1,3 +1,4 @@
+import React from "react"
 import "../styles/modal.css";
 
 const SERVER = "http://localhost:5000"

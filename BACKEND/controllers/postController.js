@@ -18,7 +18,7 @@ const createPost = async (req, res) => {
 }
 
 const getPosts = async (req, res) => {
-	const LIMIT = 24;
+	const LIMIT = 1;
 	const page = req.query.page || 1;
 	const skip = (page - 1) * LIMIT
 	const posts = await Post.find({})
@@ -29,6 +29,9 @@ const getPosts = async (req, res) => {
 		.limit(LIMIT)
 	const totalPosts = await Post.count({});
 	const totalPages = Math.ceil(totalPosts / LIMIT);
+	// setTimeout(() => {
+	// 	res.json({ok: true, count: posts.length, posts, totalPages, totalPosts});
+	// }, 10000);
 	res.json({ok: true, count: posts.length, posts, totalPages, totalPosts});
 }
 

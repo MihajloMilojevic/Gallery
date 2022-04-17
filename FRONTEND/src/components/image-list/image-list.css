@@ -1,0 +1,13 @@
+.image-list {
+	width: 80%;
+	margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+	.image-list {
+		width: 100%;
+	}
+}
+.image-list-container {
+	margin: 1rem;
+}

@@ -1,3 +1,4 @@
+import React from "react"
 import "../styles/pagination.css";
 
 export default function Pagination({currPage, maxPage, moveTo}) {

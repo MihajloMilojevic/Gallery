@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.home {
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	/* background-color: aqua; */
+}
+.add-button {
+	position: absolute;
+	bottom: 5vh;
+	right: 5vw
+}
+.image-list-container {
+	
+}

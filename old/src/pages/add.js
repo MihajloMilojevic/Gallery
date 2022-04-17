@@ -1,3 +1,4 @@
+import React from "react"
 const SERVER = "http://localhost:5000"
 
 export default function Add() {
